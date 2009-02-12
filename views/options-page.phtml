@@ -1,0 +1,56 @@
+<?php
+/**
+ * Copyright 2008 Chris Abernethy
+ *
+ * This file is part of MicroPoll.
+ *
+ * MicroPoll is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MicroPoll is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MicroPoll.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+?>
+<div class="wrap">
+
+    <h2><?php echo wp_specialchars($this->get('heading')) ?></h2>
+
+    <form method="post" action="">
+
+        <?php wp_nonce_field($this->get('nonce_action')) ?>
+
+        <table class="form-table">
+            <tbody>
+                <tr valign="top">
+                    <th scope="row"><label class="selectit" for="<?php echo attribute_escape($this->get('plugin_label') . '_slot_code')?>"><?php echo wp_specialchars(__('Embed Code', 'micropoll')) ?></label></th>
+                    <td><input id="<?php echo attribute_escape($this->get('plugin_label') . '_slot_code')?>" name="<?php echo attribute_escape($this->get('plugin_label') . '_slot_code')?>" size="50" type="text" value="<?php echo wp_specialchars($this->get('slot-code'), true) ?>" />
+                        <br/>
+                        <span class="setting-description">
+                            <?php
+                                printf(__('Paste the HTML code for the Poll, Landing Page, or Random Delivery configuration generated through your %s.')
+                                  , sprintf('<a href="http://micropoll.com/akira/?application=MicroPoll" title="%s">%s</a>', __('Log in to MicroPoll'), __('MicroPoll account'))
+                                );
+                            ?>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <input type="hidden" name="action" value="update"/>
+
+        <p class="submit">
+            <input type="submit" name="<?php echo attribute_escape($this->get('plugin_label') . '_submit') ?>" value="<?php echo wp_specialchars(__('Save Changes', 'micropoll')) ?>" />
+        </p>
+
+    </form>
+
+</div>

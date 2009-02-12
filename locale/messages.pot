@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Chris Abernethy
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: MicroPoll 1.0\n"
+        "Report-Msgid-Bugs-To: http://www.chrisabernethy.com/contact\n"
+        "POT-Creation-Date: 2009-02-11 22:08-0500\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: ../views/options-page.phtml:33
+msgid   "Embed Code"
+msgstr  ""
+
+#: ../views/options-page.phtml:38
+#, php-format
+msgid   "Paste the HTML code for the Poll, Landing Page, or Random Delivery "
+        "configuration generated through your %s."
+msgstr  ""
+
+#: ../views/options-page.phtml:39
+msgid   "Log in to MicroPoll"
+msgstr  ""
+
+#: ../views/options-page.phtml:39
+msgid   "MicroPoll account"
+msgstr  ""
+
+#: ../views/options-page.phtml:51
+msgid   "Save Changes"
+msgstr  ""
+
+#: ../bootstrap.php:5
+msgid   "Easily integrate web-based polls from MicroPoll into WordPress"
+msgstr  ""
